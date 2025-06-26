@@ -7,7 +7,7 @@ save_dir="C:/yt-dlp/video"
 save_path=os.path.join(save_dir,file_name)
 
 cmd = [
-    "yt-dlp",
+    "C:/yt-dlp/yt-dlp.exe",
     "-f","bv*+ba[ext=m4a]",
     "--merge-output-format","mp4",
     "-o",save_path,
