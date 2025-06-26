@@ -1,32 +1,35 @@
-```
-# How to Download Free Audio / Video
+# 🎵 How to Download Free Audio / Video
 
-1. 먼저 디렉토리를 만들고 해당 디렉토리로 이동한 뒤, 이 코드를 Git으로 클론하세요.
+1. 먼저 디렉토리를 하나 만들고, 그 안에서 이 코드를 클론하세요:
 
     git clone https://github.com/your-username/your-repo.git
 
-2. 두 개의 프로그램이 필요합니다:
+2. 아래 두 프로그램을 설치해야 합니다:
 
-🟦 yt-dlp  
-- 아래 링크에서 `yt-dlp.exe` 파일만 다운로드
-  https://github.com/yt-dlp/yt-dlp/releases/latest
-- 해당 파일을 방금 만든 디렉토리에 넣으세요
+▶ **yt-dlp**  
+- 다운로드 링크: [yt-dlp 다운로드](https://github.com/yt-dlp/yt-dlp/releases/latest)  
+- `yt-dlp.exe` 하나만 다운받아서 위에서 만든 폴더에 넣으세요
 
-🟦 ffmpeg  
-- 아래 링크 접속  
-  https://www.gyan.dev/ffmpeg/builds/
-- `ffmpeg-release-essentials.zip` 다운로드 후 압축 해제  
-- 안에 있는 `bin/ffmpeg.exe`만 디렉토리에 복사
+▶ **ffmpeg**  
+- 다운로드 링크: [ffmpeg 다운로드](https://www.gyan.dev/ffmpeg/builds/)  
+- 페이지에서 `ffmpeg-release-essentials.zip`을 다운로드  
+- 압축 해제 후 `bin/ffmpeg.exe` 파일만 꺼내서 폴더에 넣으세요
 
-3. 파이썬 코드에서 다음 항목을 **절대경로**로 바꿔주세요:
+    예시 구조:
+    ```
+    C:/yt-dlp/
+    ├── yt-dlp.exe
+    └── ffmpeg.exe
+    ```
 
-    save_dir = "C:/yt-dlp/audio"
+3. 파이썬 코드에서 다음 경로들을 **절대경로로 수정**하세요:
+
+    save_dir = "C:/yt-dlp/audio"  
     cmd = ["C:/yt-dlp/yt-dlp.exe", ...]
 
 4. 실행 방법:
-- 첫 줄에 YouTube 링크 붙여넣기
-- 두 번째 줄에 저장할 파일 이름 입력
-- 오디오/비디오 폴더에 파일 저장됨
+- 첫 줄에 YouTube 링크 입력  
+- 두 번째 줄에 저장할 파일명 입력  
+- 오디오/영상이 audio/ 또는 video/ 폴더에 저장됩니다
 
-Enjoy!
-```
+✅ 모든 준비가 끝났다면 코드를 실행하세요!
