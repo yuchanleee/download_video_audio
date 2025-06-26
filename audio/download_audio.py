@@ -17,13 +17,3 @@ yt_dlp_cmd = [
 ]
 
 subprocess.run(yt_dlp_cmd)
-
-# ffmpeg_cmd=[
-#     "ffmpeg","-y",
-#     "-i",save_path+'.wav',
-#     "-ar","16000",
-#     "-ac","1",
-#     save_path+"_processed.wav"
-# ]
-
-# subprocess.run(ffmpeg_cmd)
